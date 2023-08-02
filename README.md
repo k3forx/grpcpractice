@@ -232,5 +232,3 @@ Hello, k3forx!
 please enter >2
 bye...
 ```
-
-- 
