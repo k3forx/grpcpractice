@@ -232,3 +232,16 @@ Hello, k3forx!
 please enter >2
 bye...
 ```
+
+## gRPCで実現できるストリーミング処理
+
+### gRPCで可能な4種類の通信方式
+
+- Unary RPC
+- Server streaming RPC
+- Client streaming RPC
+- Bidirectional streaming RPC
+
+## gRPCにおけるステータスコード
+
+- gRPCの場合は**メソッドの呼び出しに成功した場合には、中で何が起ころうともHTTPレスポンスステータスコードは`200 OK`を返す**
