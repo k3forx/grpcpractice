@@ -175,3 +175,29 @@ $ which grpcurl
 ```
 
 ### サーバーリフレクションの設定
+
+- [サーバーリフレクションについて](https://github.com/grpc/grpc/blob/master/doc/server-reflection.md)
+
+```go
+	reflection.Register(s)
+```
+
+### 動作確認
+
+- サーバーを起動
+
+```bash
+$ cd cmd/server
+
+$ go run ./main.go
+2023/08/02 21:54:03 start gRPC server port: 8080
+```
+
+- リクエストを送る
+
+```bash
+$ grpcurl -plaintext -d '{"name": "k3forx"}' localhost:8080 myapp.GreetingService.Hello | jq -r
+{
+  "message": "Hello, k3forx!"
+}
+```
