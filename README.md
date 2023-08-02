@@ -201,3 +201,36 @@ $ grpcurl -plaintext -d '{"name": "k3forx"}' localhost:8080 myapp.GreetingServic
   "message": "Hello, k3forx!"
 }
 ```
+
+## gRPCクライアントの実装
+
+- サーバーを起動
+
+```bash
+$ cd cmd/server
+
+$ go run ./main.go
+2023/08/02 22:14:53 start gRPC server port: 8080
+```
+
+- クライアントを起動
+
+```bash
+$ cd cmd/client/
+
+$ go run main.go
+start gRPC client
+1: Send request
+2: exit
+please enter >1
+Please enter your name
+k3forx
+Hello, k3forx!
+
+1: Send request
+2: exit
+please enter >2
+bye...
+```
+
+- 
