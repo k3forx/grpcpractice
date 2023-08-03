@@ -13,7 +13,7 @@ import (
 	"google.golang.org/grpc/reflection"
 	"google.golang.org/grpc/status"
 
-	hellopb "github.com/k3forx/grpcpractice/pkg/grpc"
+	hellopb "github.com/k3forx/grpcpractice/init_grpc_zenn/pkg/grpc"
 )
 
 type myServer struct {

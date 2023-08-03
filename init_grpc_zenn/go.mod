@@ -1,4 +1,4 @@
-module github.com/k3forx/grpcpractice
+module github.com/k3forx/grpcpractice/init_grpc_zenn
 
 go 1.20
 

@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	hellopb "github.com/k3forx/grpcpractice/pkg/grpc"
+	hellopb "github.com/k3forx/grpcpractice/init_grpc_zenn/pkg/grpc"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
