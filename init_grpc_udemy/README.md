@@ -70,6 +70,20 @@ enum Occupation {
 
 ## GoでのProtocol Buffersの操作
 
+### protoファイルのコンパイル
+
+- `-IPATH, --proto_path=PATH`: protoファイルのimport文のバスを指定する。複数の場合は `:` を使う。
+- `--go_out=OUT_DIR`: Go言語への変換。変換したファイルの保存先を指定する。
+
+```bash
+$ protoc --version
+libprotoc 23.4
+
+protoc -I. --go_out=. proto/*.proto
+```
+
+protoファイルに `option go_package = "./path"` を記載し、コンパイルしたファイルのパッケージ名を指定する
+
 ## gRPCの基礎
 
 ## 通信方式別gRPCの詳細
