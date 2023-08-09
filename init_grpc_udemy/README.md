@@ -168,4 +168,25 @@ protoファイルに `option go_package = "./path"` を記載し、コンパイ�
 
 ## 通信方式別gRPCの詳細
 
+### Unary RPC
+
+- コンパイル
+
+```bash
+$ protoc -I. --go_out=. --go-grpc_out=. proto/*.proto
+```
+
+- サーバー起動
+
+```bash
+$ go run server/main.go
+```
+
+- クライアント起動
+
+```bash
+$ go run client/main.go
+filenames: [name.txt sports.txt]
+```
+
 ## gRPCの応用
